@@ -1,0 +1,99 @@
+html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    /* background-color: #000000d0; */
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    height: 100%;
+}
+
+.container{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    height: 60vh;
+    background-color: #000000d0;
+    box-shadow: 10px 12px 20px rgb(10, 10, 10);
+    border-radius: 1rem;
+    color: #fff;
+}
+.container .search{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.container .search input{
+    font-size: clamp(12px, 20px, 25px);
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+    width: 70%;
+    outline: none;
+    border: none;
+    padding: clamp(0.5rem, 1rem, 1rem);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.container .search img{
+    background-color: #fff;
+    padding: clamp(0.5rem, 1rem, 1rem);
+    border-radius: 50%;
+}
+
+.container p{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container p:nth-child(2){
+    font-size: clamp(0.5rem, 2rem, 2rem);
+}
+
+.container p:nth-child(3){
+    font-size: 3rem;
+}
+
+.container p:nth-child(4), .container p:nth-child(5), .container p:nth-child(6){
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 780px){
+    .container{
+        width: 70%;
+    }
+}
+
+@media (max-width: 450px){
+    body{
+        font-size: 10px;
+    }
+    .container .search{
+        height: 5vh;
+    }
+    .container .search img{
+        padding: 0.3rem;
+    }
+    .container p:nth-child(2){
+        font-size: 1.5rem;
+    }
+    .container p:nth-child(3){
+        font-size: 2rem;
+    }
+    .container p:nth-child(4), .container p:nth-child(5), .container p:nth-child(6){
+        margin-bottom: 0.8rem;
+        margin-top: 0.8rem;
+    }
+}
