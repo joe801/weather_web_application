@@ -43,6 +43,7 @@ function getlocation(){
             tempDisp.innerHTML = tempInCelsius;
             maxTemp.innerHTML = Math.round((data.main.temp_max - 273.15)*100)/100;
             minTemp.innerHTML = Math.round((data.main.temp_min - 273.15)*100)/100;
+            feelTemp.innerHTML = Math.round((data.main.feels_like - 273.15)*100)/100;
             humidity.innerHTML = data.main.humidity;
             description.innerHTML = data.weather[0].description;
         })
