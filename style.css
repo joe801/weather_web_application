@@ -83,6 +83,9 @@ body{
     .container .search{
         height: 5vh;
     }
+    .container .search input{
+        margin-right: 1rem;
+    }
     .container .search img{
         padding: 0.3rem;
     }
